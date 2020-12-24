@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LCS Trading Company</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+	rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+	crossorigin="anonymous">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+
+
+<body>
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="logo.jpg" alt="" width="240" height="75" class="d-inline-block align-top">
+	</a>
+  </div>
+</nav>
+
+<script type="text/javascript">var submitted=false;</script>
+   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location ='';}"></iframe>
+  
+    
+   
+    <!-- Update the Google forms URL in action-->
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdv1rUjqKU12NsyLcIXiYLwMFUUE-rl09i482O4wW_12IHjjA/formResponse" 
+	method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+	
+	<div class="row">
+    <div class="col-sm">
+	<!-- Foodgrain table -->
+	
+	<table class="table">
+	<thead class="table">
+			<th style="font-size:20px">Foodgrains</th>
+			</thead>
+	</table>
+    <table class="table table-striped w-auto">
+	
+		<thead class="table-dark">
+			<th>Image</th>
+			<th>Product</th>
+			<th>Quantity<span style="color:#212529">...</span> </th>
+			<th>Mention Brand Name If Any </th>
+		</thead>
+		
+		
+		<tbody class="table-warning">
+			<tr>
+				<td><img src="wheat.jpg" height="35px" width="50" ></td>
+			    <td > Wheat</td>
+				<td><input type="number" name="entry.64544860"  min="0" max="10" placeholder ="0" > Kg</td>
+				<td><input type="text"  name="64544860"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="jowar.jpg" height="35px" width="50" > </td>
+				<td>Jowar</td>
+				<td><input type="number" name="entry.321396731" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"  name="entry.321396731"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="bajra.jpg" height="35px" width="50" > </td>
+				<td>Bajara</td>
+				<td><input type="number" name="entry.966787356" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"  name="entry.966787356"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="r.jpg" height="35px" width="50" ></td>
+				<td> Rice</td>
+				<td><input type="number" name="entry.583709325" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"  name="entry.583709325"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="lb.jpg" height="35px" width="50" > </td>
+				<td>Basmati Long Rice</td>
+				<td><input type="number" name="entry.1374672331" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"  name="entry.1374672331"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="tb.jpg" height="35px" width="50" > </td>
+				<td>Basmati Tukda Rice</td>
+				<td><input type="number" name="entry.481238840"  min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"  name="entry.481238840"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="ir.jpg" height="35px" width="50" > </td>
+				<td>Indrayani Rice</td>
+				<td><input type="number" name="entry.805422411" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"  name="entry.805422411" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="kr.jpg" height="35px" width="50" ></td>
+				<td> Kollam Rice</td>
+				<td><input type="number" name="entry.429756685" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"  name="entry.429756685" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="am.jpg" height="35px" width="50" ></td>
+				<td>Ambi Mohar Rice</td>
+				<td><input type="number" name="entry.109000122" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text" name="entry.109000122" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+		</tbody>
+	</table>
+		
+	
+	<table class="table">
+	<thead class="table">
+			<th style="font-size:20px">Pulses</th>
+			</thead>
+	</table>
+    <table class="table table-striped w-auto">
+	
+		<thead class="table-dark">
+			<th>Image</th>
+			<th>Product</th>
+			<th>Quantity<span style="color:#212529">.....</span> </th>
+			<th>Mention Brand Name If Any </th>
+		</thead>
+		
+		
+		<tbody class="table-success">
+			<tr>
+				<td><img src="tur.jpg" height="35px" width="50" ></td>
+			    <td > Tur Dal/Arhar</td>
+				<td><input type="number" name="entry.846725445" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text" name="entry.846725445" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="udad.jpg" height="35px" width="50" > </td>
+				<td>Udad Dal</td>
+				<td><input type="number" name="entry.1470052449" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text" name="entry.1470052449"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="mdal.jpg" height="35px" width="50" > </td>
+				<td>Moong Dal</td>
+				<td><input type="number" name="entry.471427539" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"  name="entry.471427539"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="masur.jpg" height="35px" width="50" ></td>
+				<td> Masur Dal</td>
+				<td><input type="number" name="entry.1467357343" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text" name="entry.1467357343" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="chana.jpg" height="35px" width="50" > </td>
+				<td>Chana Dal</td>
+				<td><input type="number"  name="entry.1187374672" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text" name="entry.1187374672"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="matki.jpg" height="35px" width="50" > </td>
+				<td>Matki</td>
+				<td><input type="number" name="entry.1716278495" min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"  name="entry.1716278495"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="moong.jpg" height="35px" width="50" > </td>
+				<td>Moong</td>
+				<td><input type="number"   name="entry.1204788599"  min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"  name="entry.1204788599"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="vata.jpg" height="35px" width="50" ></td>
+				<td> Vatana</td>
+				<td><input type="number"   name="entry.1047306944"  min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"    name="entry.1047306944"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="hul.jpg" height="35px" width="50" ></td>
+				<td>Hulga</td>
+				<td><input type="number"    name="entry.107685587"  min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"    name="entry.107685587"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="cha.jpg" height="35px" width="50" ></td>
+				<td>Chana</td>
+				<td><input type="number"   name="entry.1829684838"  min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.1829684838"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="chb.jpg" height="35px" width="50" ></td>
+				<td>Chole</td>
+				<td><input type="number"   name="entry.325764846"  min="0" max="10" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.325764846"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+		</tbody>
+	</table>
+	
+		
+	<!-- first col 2nd table -->	
+	<table class="table table-striped w-auto">
+	<thead class="table">
+			<th style="font-size:20px">Daily Essentials</th>
+			</thead>
+	</table>
+	<table class="table table-striped w-auto">
+		<thead class="table-dark">
+			<th>Image</th>
+			<th>Product</th>
+			<th>Quantity<span style="color:#212529">...</span> </th>
+			<th>Mention Brand Name If Any </th>
+		</thead>
+		
+		<tbody class="table-primary">
+			<tr>
+				<td><img src="sugar.jpg" height="30px" width="50" > </td>
+				<td>Sugar</td>
+				<td><input type="number" name="entry.1673182604" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.1673182604" size="14"placeholder="Brand Name If Any"></td>
+				
+			</tr>
+			<tr>
+				<td><img src="ps.jpg" height="30px" width="50" > </td>
+				<td>Sugar Powder</td>
+				<td><input type="number"  name="entry.1463063694" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.1463063694"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="ks.jpg" height="30px" width="50" > </td>
+				<td>Khadi Sugar</td>
+				<td><input type="number"  name="entry.1291570243" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.1291570243"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td> <img src="tata.jpg" height="30px" width="50" ></td>
+				<td> Tata Salt</td>
+				<td><input type="number"  name="entry.1513829175" min="0" max="50" placeholder ="0"> Kg</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="psalt.jpg" height="30px" width="50" > </td>
+				<td>Puro Salt</td>
+				<td><input type="number"  name="entry.324703941" min="0" max="50" placeholder ="0"> Kg</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="salt.jpg" height="30px" width="50" ></td>
+				<td> Salt</td>
+				<td><input type="number"  name="entry.2021045028"  min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.2021045028"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="bksalt.jpg" height="30px" width="50" ></td>
+				<td> Black Salt</td>
+				<td><input type="number"  name="entry.1888459838" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.1888459838"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="snamak.jpg" height="30px" width="50" > </td>
+				<td> Sendha Salt</td>
+				<td><input type="number"  name="entry.1865898806" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.1865898806" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="sooji.jpg" height="30px" width="50" > </td>
+				<td> Sooji/Rawa</td>
+				<td><input type="number"   name="entry.1748038631" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.1748038631"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="poha.jpg" height="30px" width="50" >  </td>
+				<td>Poha </td>
+				<td><input type="number"  name="entry.620167243" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.620167243" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="mp.jpg" height="30px" width="50" > </td>
+				<td> Maka Poha</td>
+				<td><input type="number"  name="entry.248376658" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.248376658"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="mur.jpg" height="30px" width="50" > </td>
+				<td>Murmura</td>
+				<td><input type="number"  name="entry.85839874" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"  name="entry.85839874" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="bha.jpg" height="30px" width="50" ></td>
+				<td>  Bhadang</td>
+				<td><input type="number"  name="entry.985205511" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.985205511" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="sago.jpg" height="30px" width="50" > </td>
+				<td> Sabudana/Sago</td>
+				<td><input type="number"  name="entry.751177982" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.751177982"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="gul.jpg" height="30px" width="50" ></td>
+				<td>  Jaggery/Gul</td>
+				<td><input type="number"  name="entry.1977946167" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"  name="entry.1977946167"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="besan.jpg" height="30px" width="50" >  </td>
+				<td> Besan</td>
+				<td><input type="number"  name="entry.2051478525" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.2051478525" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="maida.jpg" height="30px" width="50" ></td>
+				<td>  Maida</td>
+				<td><input type="number"  name="entry.1833561032" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.1833561032"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="rf.jpg" height="30px" width="50" > </td>
+				<td> Rice Flour</td>
+				<td><input type="number"  name="entry.1132887108" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.1132887108"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="cf.jpg" height="30px" width="50" > </td>
+				<td> Corn Flour</td>
+				<td><input type="number"  name="entry.1991862695" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.1991862695"size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="wf.jpg" height="30px" width="50" ></td>
+				<td>  Wheat Flour</td>
+				<td><input type="number"  name="entry.387665389" min="0" max="50" placeholder ="0"> Kg</td>
+				<td><input type="text"   name="entry.387665389"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="sa.jpg" height="30px" width="50" > </td>
+				<td>Samrat Atta</td>
+				<td><input type="number"  name="entry.452960265" min="0" max="50" placeholder ="0"> Kg</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="awf.jpg" height="30px" width="50" ></td>
+				<td> Ashirwad Atta</td>
+				<td><input type="number"  name="entry.610700003" min="0" max="50" placeholder ="0"> Kg</td>
+				<td></td>
+			</tr>
+			
+		</tbody>
+	</table>
+	
+	<table class="table">
+	<thead class="table">
+			<th style="font-size:20px">Beverages & Others</th>
+			</thead>
+	</table>
+	<table class="table table-striped w-auto">
+		<thead class="table-dark">
+			
+			<th>Image</th>
+			<th>Product</th>
+			<th>Quantity<span style="color:#212529">....</span> </th>
+			<th>Mention Brand Name If Any </th>
+			
+		</thead>
+		<tbody class="table-light">
+			<tr>
+				<td ><img src="pari.jpg" height="30px" width="50" > </td>
+				<td> Parivar 250gm</td>
+				<td><input type="number" name="entry.2134909612" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="parii.jpg" height="30px" width="50" > </td>
+				<td> Parivar 500gm</td>
+				<td><input type="number" name="entry.932931832"  min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="parii.jpg" height="30px" width="50" > </td>
+				<td>Parivar 1 kg</td>
+				<td><input type="number" name="entry.1265054948"min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="soc1.jpg" height="30px" width="50" > </td>
+				<td> Society 250gm</td>
+				<td><input type="number" name="entry.754869485" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="soc.jpg" height="30px" width="50" ></td>
+				<td> Society 500gm</td>
+				<td><input type="number" name="entry.2084712179" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="socc.jpg" height="30px" width="50" > </td>
+				<td> Society 1 Kg</td>
+				<td><input type="number" name="entry.1644690799"  min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="wa.jpg" height="30px" width="50" > </td>
+				<td>Wagh Bakri 250gm</td>
+				<td><input type="number" name="entry.1570244613" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="waa.jpg" height="30px" width="50" > </td>
+				<td> Wagh Bakri 500gm</td>
+				<td><input type="number" name="entry.1726560414" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="waaa.jpg" height="30px" width="50" ></td>
+				<td>  Wagh Bakri 1 kg</td>
+				<td><input type="number" name="entry.1120725013" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="la.jpg" height="30px" width="50" > </td>
+				<td> Red Label 250gm</td>
+				<td><input type="number" name="entry.1572088977" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="laa.jpg" height="30px" width="50" ></td>
+				<td> Red Label 500gm</td>
+				<td><input type="number" name="entry.919830271" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="laaa.jpg" height="30px" width="50" ></td>
+				<td> Red Label 1 kg</td>
+				<td><input type="number" name="entry.348743966" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="taj.jpg" height="30px" width="50" ></td>
+				<td> Taj 250gm</td>
+				<td><input type="number" name="entry.1476067195" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="tajj.jpg" height="30px" width="50" > </td>
+				<td> Taj 500gm</td>
+				<td><input type="number" name="entry.94195740" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="tajjj.jpg" height="30px" width="50" ></td>
+				<td>  Taj 1 kg</td>
+				<td><input type="number" name="entry.658380946" min="0" max="10" placeholder ="0">  pcs</td>
+				
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="sah.jpg" height="30px" width="50" > </td>
+				<td> Sahydri Tea 250gm</td>
+				<td><input type="number" name="entry.872614556" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+				<tr>
+				<td ><img src="sah.jpg" height="30px" width="50" > </td>
+				<td> Sahydri Tea 500gm</td>
+				<td><input type="number"name="entry.1094487759"  min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+				<tr>
+				<td ><img src="sah.jpg" height="30px" width="50" > </td>
+				<td>Sahydri Tea 1kg</td>
+				<td><input type="number" name="entry.464592521" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td ><img src="gir.jpg" height="30px" width="50" > </td>
+				<td>Girnar Tea 500gm</td>
+				<td><input type="number" name="entry.756198784" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="gir.jpg" height="30px" width="50" ></td>
+				<td> Girnar Tea 1 kg</td>
+				<td><input type="number" name="entry.19234257" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="nes.jpg" height="30px" width="50" > </td>
+				<td> Nescafe </td>
+				<td><input type="number" name="entry.176013375"  min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="bru.jpg" height="30px" width="50" > </td>
+				<td> Bru</td>
+				<td><input type="number" name="entry.1715178995" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="lip.jpg" height="30px" width="50" >  </td>
+				<td> Lipton Green Tea</td>
+				<td><input type="number" name="entry.787839136" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+				<tr>
+				<td ><img src="org.jpg" height="30px" width="50" >  </td>
+			    <td>Organic India Green Tea</td>
+				<td><input type="number" name="entry.600875721" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td ><img src="ras.jpg" height="30px" width="50" >  </td>
+				<td> Rasna</td>
+				<td><input type="number" name="entry.889469182" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+				<tr>
+				<td ><img src="tang.jpg" height="30px" width="50" >  </td>
+				<td>Tang</td>
+				<td><input type="number" name="entry.2093716704" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+				<tr>
+				<td ><img src="bournvita.jpg" height="30px" width="50" > </td>
+				<td> Bournvita</td>
+				<td><input type="number" name="entry.1809217679" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+				<tr>
+				<td ><img src="complan.jpg" height="30px" width="50" ></td>
+				<td>  Complan</td>
+				<td><input type="number" name="entry.817695072" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+				<tr>
+				<td ><img src="hor.jpg" height="30px" width="50" >  </td>
+				<td> Horlicks</td>
+				<td><input type="number" name="entry.259851238" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+				<tr>
+				<td ><img src="boost.jpg" height="30px" width="50" ></td>
+				<td>  Boost </td>
+				<td><input type="number" name="entry.1227580487" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+				<tr>
+				<td ><img src="proti.jpg" height="30px" width="50" >  </td>
+				<td>Protinex</td>
+				<td><input type="number" name="entry.722493097" min="0" max="10" placeholder ="0">  pcs</td>
+				<td></td>
+			</tr>
+					<tr>
+				<td ><img src="teap.jpg" height="30px" width="50" > </td>
+				<td> Tea Powder</td>
+				<td><input type="number" name="entry.2100948422" min="0" max="10" placeholder ="0">  pcs</td>
+				<td><input type="text"  name="entry.2100948422"   size="14" placeholder="Brand Name If Any"></td>
+			</tr>
+					<tr>
+				<td ><img src="cff.jpg" height="30px" width="50" >  </td>
+				<td> Coffee Powder</td>
+				<td><input type="number" name="entry.428827842" min="0" max="10" placeholder ="0">  pcs</td>
+				<td><input type="text" name="entry.428827842"size="14" placeholder="Brand Name If Any"></td>
+			</tr>
+					<tr>
+				<td ><img src="gt.jpg" height="30px" width="50" > </td>
+				<td> Green Tea</td>
+				<td><input type="number" name="entry.2019171415" min="0" max="10" placeholder ="0">  pcs</td>
+				<td><input type="text" name="entry.2019171415"  size="14" placeholder="Brand Name If Any"></td>
+			</tr>
+				<tr>
+				<td ><img src="glu.jpg" height="30px" width="50" >  </td>
+				<td>Glucose D</td>
+				<td><input type="number" name="entry.1898038036" min="0" max="10" placeholder ="0">  pcs</td>
+				<td><input type="text" name="entry.1898038036" size="14" placeholder="Brand Name If Any"></td>
+			</tr>
+			
+			
+		</tbody>
+		</table>
+		
+		
+	<!-- first col 3rd table -->
+	<table class="table ">
+	<thead class="table ">
+			<th style="font-size:20px">Cookies & Bakery Products</th>
+			</thead>
+	</table>
+	<table class="table table-striped w-auto">
+		<thead class="table-dark">
+			<th>Image</th>
+			<th>Product</th>
+			<th>Quantity<span style="color:#212529">........</span> </th>
+			<th>Mention Brand Name If Any </th>
+		</thead>
+		<tbody class="table-light">
+			<tr>
+				<td><img src="parle.jpg" height="30px" width="50" > </td>
+				<td>Parle-g</td>
+				<td><input type="number" name="entry.1243744167" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="marie.jpg" height="30px" width="50" > </td>
+				<td>Marie Gold</td>
+				<td><input type="number" name="entry.1063885484" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="vmar.jpg" height="30px" width="50" ></td>
+				<td> Vita Marie</td>
+				<td><input type="number" name="entry.1839210315" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="krack.jpg" height="30px" width="50" > </td>
+				<td>krack-jack</td>
+				<td><input type="number" name="entry.1910897181" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="hide.jpg" height="30px" width="50" ></td>
+				<td> Hide & seek</td>
+				<td><input type="number" name="entry.673425664" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="dark.jpg" height="30px" width="50" > </td>
+				<td>Dark Fantasy</td>
+				<td><input type="number" name="entry.507817971" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="cream.jpg" height="30px" width="50" ></td>
+				<td> Cream Biscuits</td>
+				<td><input type="number" name="entry.396287612" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="oreo.jpg" height="30px" width="50" > </td>
+				<td>Oreo</td>
+				<td><input type="number" name="entry.306544573"  min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="bour.jpg" height="30px" width="50" ></td>
+				<td> Bourbon</td>
+				<td><input type="number" name="entry.1511778775" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="happy.jpg" height="30px" width="50" ></td>
+				<td> Happy Happy</td>
+				<td><input type="number" name="entry.1053430259" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="monaco.jpg" height="30px" width="50" ></td>
+				<td> Monaco</td>
+				<td><input type="number" name="entry.1178923665" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="20.jpg" height="30px" width="50" > </td>
+				<td>20-20</td>
+				<td><input type="number" name="entry.781113396" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="50.jpg" height="30px" width="50" > </td>
+				<td>50-50</td>
+				<td><input type="number" name="entry.1572111544" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="tg.jpg" height="30px" width="50" > </td>
+				<td>Tiger Glucose</td>
+				<td><input type="number" name="entry.1277133231" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="tk.jpg" height="30px" width="50" > </td>
+				<td>Tiger Krunch</td>
+				<td><input type="number" name="entry.157014130" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="good.jpg" height="30px" width="50" > </td>
+				<td>Good day Cashew</td>
+				<td><input type="number" name="entry.1092086654" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="gb.jpg" height="30px" width="50" > </td>
+				<td>Good day Butter</td>
+				<td><input type="number" name="entry.447939759" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="gc.jpg" height="30px" width="50" > </td>
+				<td>Good day Chocochip</td>
+				<td><input type="number" name="entry.1030133328" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="bourn.jpg" height="30px" width="50" > </td>
+				<td>Bournvita Biscuits</td>
+				<td><input type="number" name="entry.1516706925" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="bis.jpg" height="30px" width="50" > </td>
+				<td>Biscuits</td>
+				<td><input type="number" name="entry.145764790" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.145764790"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="co.jpg" height="30px" width="50" > </td>
+				<td>Coconut Biscuit</td>
+				<td><input type="number" name="entry.1233546998" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1233546998"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="cho.jpg" height="30px" width="50" > </td>
+				<td>Chocos</td>
+				<td><input type="number" name="entry.1950378853" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.1950378853" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="Dry.jpg" height="30px" width="50" > </td>
+				<td>Dry fruit Cookies</td>
+				<td><input type="number" name="entry.125365599" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.125365599"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="atta.jpg" height="30px" width="50" ></td>
+				<td> Atta Biscuits</td>
+				<td><input type="number" name="entry.1077598066"  min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.1077598066"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="khari.jpg" height="30px" width="50" ></td>
+				<td> Khari</td>
+				<td><input type="number" name="entry.2020186487" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.2020186487"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="toast.jpg" height="30px" width="50" ></td>
+				<td> Toast</td>
+				<td><input type="number" name="entry.849695737"  min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.849695737"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			
+		</tbody>
+		</table>
+		
+		
+		<table class="table">
+		<thead class="table">
+			<th style="font-size:20px">Oil & Ghee</th>
+			</thead>
+		</table>
+		<table class="table table-striped w-auto">
+		<thead class="table-dark">
+			<th>Image</th>
+			<th>Product</th>
+			<th>Quantity<span style="color:#212529">....</span> </th>
+			<th>Mention Brand Name If Any </th>
+		</thead>
+		<tbody class="table-secondary">
+			<tr>
+				<td ><img src="para.jpg" height="30px" width="50" > </td>
+				<td>Parachute Cocunut Oil</td>
+				<td><input type="number" name="entry.1127334193" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="Jas.jpg" height="30px" width="50" > </td>
+				<td>Jasmine Coconut oil</td>
+				<td><input type="number" name="entry.735454603" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="al.jpg" height="30px" width="50" > </td>
+				<td>Dabur Almond Oil</td>
+				<td><input type="number" name="entry.98180839" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="amoil.jpg" height="30px" width="50" ></td>
+				<td> Dabur Amla Oil</td>
+				<td><input type="number" name="entry.238005747" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td><img src="gesun.jpg" height="30px" width="50" ></td>
+				<td> Gemini Sunflower Oil</td>
+				<td><input type="number" name="entry.1399802629" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="sasun.jpg" height="30px" width="50" ></td>
+				<td> Samrat Sunflower Oil</td>
+				<td><input type="number" name="entry.1822315710" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="kisun.jpg" height="30px" width="50" > </td>
+				<td>Kirtigold Sunflower Oil</td>
+				<td><input type="number" name="entry.1223466277" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="geso.jpg" height="30px" width="50" > </td>
+				<td>Gemini Soyabean Oil</td>
+				<td><input type="number" name="entry.1395332681" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="kiso.jpg" height="30px" width="50" ></td>
+				<td> Kirtigold Soyabean  Oil</td>
+				<td><input type="number" name="entry.1110144448" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="gego.jpg" height="30px" width="50" > </td>
+				<td>Gemini Groundnut Oil</td>
+				<td><input type="number" name="entry.642206124" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="kigo.jpg" height="30px" width="50" > </td>
+				<td>Kirtigold Groundnut Oil</td>
+				<td><input type="number" name="entry.1447250109" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="gemu.jpg" height="30px" width="50" > </td>
+				<td>Gemini Mustard/Til Oil</td>
+				<td><input type="number" name="entry.778325696" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="rbran.jpg" height="30px" width="50" ></td>
+				<td> Rice Bran Oil</td>
+				<td><input type="number" name="entry.900107537" min="0" max="10" placeholder ="0"> lt</td>
+				<td><input type="text"  name="entry.900107537" name=""  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+				<tr>
+				<td><img src="amg.jpg" height="30px" width="50" > </td>
+				<td>Amul Ghee</td>
+				<td><input type="number" name="entry.968799682" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="ghee.jpg" height="30px" width="50" > </td>
+				<td>Special Homemade Ghee</td>
+				<td><input type="number" name="entry.1741196365" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+		
+			<tr>
+				<td><img src="gog.jpg" height="30px" width="50" > </td>
+				<td>Gowardhan Ghee</td>
+				<td><input type="number" name="entry.1612700436" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td><img src="kang.jpg" height="30px" width="50" >  </td>
+				<td>Kanhaiyya Ghee</td>
+				<td><input type="number" name="entry.920013850" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td><img src="pg.jpg" height="30px" width="50" > </td>
+				<td>Patanjali Ghee</td>
+				<td><input type="number" name="entry.1383821101" min="0" max="10" placeholder ="0"> lt</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="dalda.jpg" height="30px" width="50" > </td>
+				<td>Dalda</td>
+				<td><input type="number" name="entry.120244707" min="0" max="10" placeholder ="0"> lt</td>
+				<td><input type="text"  name="entry.120244707"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="rbran.jpg" height="30px" width="50" ></td>
+				<td> Oil</td>
+				<td><input type="number" name="entry.1764966411" min="0" max="10" placeholder ="0"> lt</td>
+				<td><input type="text"  name="entry.1764966411"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			
+		</tbody>
+		</table>
+    </div>
+    
+	<div class="col-sm">
+	
+		<table class="table">
+		<thead class="table">
+			<th style="font-size:20px">Masalas & Spices</th>
+			</thead>
+		</table>
+      <table class="table table-striped w-auto">
+		<thead class="table-dark">
+			<th>Image</th>
+			<th>Product</th>
+			<th>Quantity<span style="color:#212529">.......</span> </th>
+			<th>Mention Brand Name If Any </th>
+		</thead>
+		<tbody class="table-danger">
+			<tr>
+				<td><img src="kanda.jpg" height="30px" width="50" ></td>
+				<td>Kanda Lasun Masala</td>
+				<td><input type="number" name="entry.1803937232" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1803937232"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="goda.jpg" height="30px" width="50" ></td>
+				<td>Goda Masala</td>
+				<td><input type="number" name="entry.38048379" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.38048379"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="sunday.jpg" height="30px" width="50" ></td>
+				<td>Sunday Masala</td>
+				<td><input type="number" name="entry.1119898156" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1119898156"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="pavbhaji.jpg" height="30px" width="50" ></td>
+				<td>Pav Bhaji Masala</td>
+				<td><input type="number" name="entry.987043845" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.987043845" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="chole.jpg" height="30px" width="50" ></td>
+				<td>Chhole Masala</td>
+				<td><input type="number" name="entry.172001493" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.172001493"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="pani.jpg" height="30px" width="50" ></td>
+				<td>Panipuri Masala</td>
+				<td><input type="number" name="entry.1810348721" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.1810348721"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="sambar.jpg" height="30px" width="50" ></td>
+				<td>Sambhar Masala</td>
+				<td><input type="number" name="entry.267766569" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.267766569" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="meat.jpg" height="30px" width="50" ></td>
+				<td>Mutton Masala</td>
+				<td><input type="number" name="entry.31325644" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.31325644"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="chicken.jpg" height="30px" width="50" ></td>
+				<td>Chicken Masala</td>
+				<td><input type="number" name="entry.226558241" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.226558241"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="chakli.jpg" height="30px" width="50" ></td>
+				<td>Chakali Masala</td>
+				<td><input type="number" name="entry.629210150" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.629210150" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="chiwda.jpg" height="30px" width="50" ></td>
+				<td>Chiwda Masala</td>
+				<td><input type="number" name="entry.848261623" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.848261623" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="garam.jpg" height="30px" width="50" ></td>
+				<td>Garam Masala</td>
+				<td><input type="number" name="entry.246224087" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.246224087"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="paneer.jpg" height="30px" width="50" ></td>
+				<td>Paneer Masala</td>
+				<td><input type="number" name="entry.2113747648" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.2113747648" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="kitchen.jpg" height="30px" width="50" ></td>
+				<td>Kitchen King Masala</td>
+				<td><input type="number" name="entry.75086687" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.75086687" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="chat.jpg" height="30px" width="50" > </td>
+				<td>Chat Masala</td>
+				<td><input type="number" name="entry.215164708"  min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.215164708"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="kitchen.jpg" height="30px" width="50" ></td>
+				<td>Biryani Masala</td>
+				<td><input type="number" name="entry.1031495785" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.1031495785"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="misal.jpg" height="30px" width="50" ></td>
+				<td>Misal Masala</td>
+				<td><input type="number" name="entry.1073965633"  min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.1073965633"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="chai.jpg" height="30px" width="50" > </td>
+				<td>Chai Masala</td>
+				<td><input type="number" name="entry.70520535"  min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.70520535"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="kasuri.jpg" height="30px" width="50" ></td>
+				<td> Kasuri Methi</td>
+				<td><input type="number" name="entry.289573709" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.289573709"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="chi.jpg" height="30px" width="50" ></td>
+				<td>Chilli Flakes</td>
+				<td><input type="number" name="entry.1331934858" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1331934858"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="or.jpg" height="30px" width="50" ></td>
+				<td>Oregano</td>
+				<td><input type="number" name="entry.1376584021" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.1376584021"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="red.jpg" height="30px" width="50" ></td>
+				<td>Mirchi Powder</td>
+				<td><input type="number" name="entry.1190044699" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1190044699"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="haldi.jpg" height="30px" width="50" ></td>
+				<td>Haldi Powder</td>
+				<td><input type="number" name="entry.173678842" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.173678842"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="dhana.jpg" height="30px" width="50" ></td>
+				<td>Dhana Powder</td>
+				<td><input type="number" name="entry.133041618" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.133041618" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="blackp.jpg" height="30px" width="50" ></td>
+				<td>Black Pepper Powder</td>
+				<td><input type="number" name="entry.2124513163" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.2124513163"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="ep.jpg" height="30px" width="50" ></td>
+				<td>Elachi Powder</td>
+				<td><input type="number" name="entry.592384769" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.592384769"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="jirap.jpg" height="30px" width="50" ></td>
+				<td>Jeera Powder</td>
+				<td><input type="number" name="entry.543801707" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.543801707"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="aam.jpg" height="30px" width="50" ></td>
+				<td>Aamchur Powder</td>
+				<td><input type="number" name="entry.384257868" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.384257868" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			
+			<tr>
+				<td><img src="sunp.jpg" height="30px" width="50" ></td>
+				<td>Sunth Powder</td>
+				<td><input type="number" name="entry.865586894" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.865586894"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="jira.jpg" height="30px" width="50" ></td>
+				<td>Jeera </td>
+				<td><input type="number" name="entry.429572998" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.429572998"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="mo.jpg" height="30px" width="50" ></td>
+				<td>Mohri</td>
+				<td><input type="number" name="entry.253532830" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.253532830"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="dal.jpg" height="30px" width="50" ></td>
+				<td>Dalchini</td>
+				<td><input type="number" name="entry.2108448771" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.2108448771"  size="11"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="lavang.jpg" height="30px" width="50" ></td>
+				<td>Lavang</td>
+				<td><input type="number" name="entry.1464366839" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1464366839"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			
+			<tr>
+				<td><img src="blackpp.jpg" height="30px" width="50" ></td>
+				<td>Black Pepper</td>
+				<td><input type="number" name="entry.1139983038" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.1139983038" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+				<tr>
+				<td><img src="el.jpg" height="30px" width="50" ></td>
+				<td>Elachi</td>
+				<td><input type="number" name="entry.321822224"min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.321822224" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+				<tr>
+				<td><img src="aaj.jpg" height="30px" width="50" ></td>
+				<td>Aajma</td>
+				<td><input type="number" name="entry.1943316240"  min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.1943316240"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+				<tr>
+				<td><img src="khas.jpg" height="30px" width="50" ></td>
+				<td>Khaskhas</td>
+				<td><input type="number" name="entry.2137765179" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.2137765179"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+				<tr>
+				<td><img src="jay.jpg" height="30px" width="50" ></td>
+				<td>Jayfhal</td>
+				<td><input type="number" name="entry.74646070"  min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.74646070" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+				<tr>
+				<td><img src="dh.jpg" height="30px" width="50" ></td>
+				<td>Dhana</td>
+				<td><input type="number" name="entry.1809411957" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1809411957"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+				<tr>
+				<td><img src="badi.jpg" height="30px" width="50" ></td>
+				<td>Badishep</td>
+				<td><input type="number" name="entry.1357866748" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1357866748"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+				<tr>
+				<td><img src="methi.jpg" height="30px" width="50" ></td>
+				<td>Methi dana </td>
+				<td><input type="number" name="entry.1093845035"min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.1093845035"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+				<tr>
+				<td><img src="sunth.jpg" height="30px" width="50" ></td>
+				<td>Sunth(Ginger Root)</td>
+				<td><input type="number" name="entry.281851824" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.281851824"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+				<tr>
+				<td><img src="k.jpg" height="30px" width="50" ></td>
+				<td>Keshar (Saffron)</td>
+				<td><input type="number" name="entry.1566722015" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1566722015"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			</tr>
+				<tr>
+				<td><img src="soda.jpg" height="30px" width="50" ></td>
+				<td>Soda</td>
+				<td><input type="number" name="entry.1796151163" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1796151163"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="eno.jpg" height="30px" width="50" ></td>
+				<td>Eno </td>
+				<td><input type="number" name="entry.968222526" min="0" max="500" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.968222526"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+		</tbody>
+		</table>
+		
+		
+		<table class="table">
+		<thead class="table">
+			<th style="font-size:20px">Dry Fruits</th>
+			</thead>
+		</table>
+		<table class="table table-striped w-auto">
+		<thead class="table-dark">
+			
+			<th>Image</th>
+			<th>Product</th>
+			<th>Quantity<span style="color:#212529">.......</span> </th>
+			<th>Mention Brand Name If Any </th>
+		</thead>
+		<tbody class="table-info">
+			<tr>
+				<td ><img src="ba.jpg" height="30px" width="50" ></td>
+				<td>Badam/Almond</td>
+				<td><input type="number" name="entry.240913838" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text" name="entry.240913838"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td ><img src="ro.jpg" height="30px" width="50" ></td>
+				<td>Roasted Almond</td>
+				<td><input type="number" name="entry.1846795222" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text"  name="entry.1846795222" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="kaju.jpg" height="30px" width="50" ></td>
+				<td>Kaju</td>
+				<td><input type="number" name="entry.1150387338" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text" name="entry.1150387338"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="mak.jpg" height="30px" width="50" ></td>
+				<td>Masala Kaju</td>
+				<td><input type="number" name="entry.897499740" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text"  name="entry.897499740"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="rok.jpg" height="30px" width="50" ></td>
+				<td>Roasted Kaju</td>
+				<td><input type="number" name="entry.413944135" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text"  name="entry.413944135" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="sak.jpg" height="30px" width="50" ></td>
+				<td>Salted Kaju</td>
+				<td><input type="number" name="entry.1723865689" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text"  name="entry.1723865689"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="kish.jpg" height="30px" width="50" ></td>
+				<td>Kishmish</td>
+				<td><input type="number" name="entry.1710046956" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text"  name="entry.1710046956"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="bkish.jpg" height="30px" width="50" ></td>
+				<td>Black Kishmish</td>
+				<td><input type="number" name="entry.987686287" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text"  name="entry.987686287"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			
+			<tr>
+				<td><img src="pi.jpg" height="30px" width="50" ></td>
+				<td>Pista</td>
+				<td><input type="number" name="entry.20840395" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text" name="entry.20840395"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="ropi.jpg" height="30px" width="50" ></td>
+				<td>Roasted Pista</td>
+				<td><input type="number" name="entry.1672925021" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text" name="entry.1672925021"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="sapi.jpg" height="30px" width="50" ></td>
+				<td>Salted Pista</td>
+				<td><input type="number" name="entry.451324622" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text"  name="entry.451324622"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="ak.jpg" height="30px" width="50" ></td>
+				<td>Akhrot/walnuts</td>
+				<td><input type="number" name="entry.1830279627" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text" name="entry.1830279627" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="date.jpg" height="30px" width="50" ></td>
+				<td>Dates</td>
+				<td><input type="number" name="entry.1342296885" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text" name="entry.1342296885"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="dd.jpg" height="30px" width="50" ></td>
+				<td>Dried Dates</td>
+				<td><input type="number" name="entry.1956881005" min="0" max="1000" placeholder ="0"> gm</td>
+				<td><input type="text"  name="entry.1956881005"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+		</tbody>
+	</table>
+	
+	
+	<table class="table">
+		<thead class="table">
+			<th style="font-size:20px">Snacks</th>
+			</thead>
+		</table>
+	<table class="table table-striped w-auto">
+		<thead class="table-dark">
+			
+			<th>Image</th>
+			<th>Product</th>
+			<th>Quantity<span style="color:#212529">........</span> </th>
+			<th>Mention Brand Name If Any </th>
+		</thead>
+		<tbody class="table-success">
+			
+			<tr>
+				<td><img src="maggi.jpg" height="30px" width="50" ></td>
+				<td>Maggie Noodles</td>
+				<td><input type="number" name="entry.322285862" min="0" max="1000" placeholder ="0"> pcs </td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="yip.jpg" height="30px" width="50" ></td>
+				<td>Yipee Noodles</td>
+				<td><input type="number" name="entry.1559324233" min="0" max="1000" placeholder ="0"> pcs </td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="noo.jpg" height="30px" width="50" ></td>
+				<td >Noodles</td>
+				<td><input type="number" name="entry.698057039" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.698057039"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="pas.jpg" height="30px" width="50" ></td>
+				<td>Pasta</td>
+				<td><input type="number" name="entry.1773729054" min="0" max="1000" placeholder ="0"> pcs </td>
+				<td><input type="text"  name="entry.1773729054"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="oot.jpg" height="30px" width="50" ></td>
+				<td>Oats</td>
+				<td><input type="number" name="entry.1665211716" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1665211716"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="vermi.jpg" height="30px" width="50" ></td>
+				<td>Vermicelli(Sevai)</td>
+				<td><input type="number" name="entry.669471214" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.669471214"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="flakes.jpg" height="30px" width="50" ></td>
+				<td>Corn Flakes</td>
+				<td><input type="number" name="entry.1583124782"min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1583124782"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			
+			<tr>
+				<td><img src="jam.jpg" height="30px" width="50" ></td>
+				<td>Jam</td>
+				<td><input type="number" name="entry.1227879802" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1227879802"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="ket.jpg" height="30px" width="50" ></td>
+				<td>Tomato Ketchup</td>
+				<td><input type="number" name="entry.435547998"min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.435547998" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="soya.jpg" height="30px" width="50" ></td>
+				<td>Soya Sauce</td>
+				<td><input type="number" name="entry.17041361"min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"name="entry.17041361"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="chilli.jpg" height="30px" width="50" ></td>
+				<td>Chilli Sauce</td>
+				<td><input type="number" name="entry.1516811738" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.1516811738"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="scz.jpg" height="30px" width="50" ></td>
+				<td>Schezwan Chutney</td>
+				<td><input type="number" name="entry.1820417876" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1820417876" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="choco.jpg" height="30px" width="50" ></td>
+				<td>Chocolate Sauce</td>
+				<td><input type="number" name="entry.383538719" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.383538719" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+				<tr>
+				<td><img src="dhoney.jpg" height="30px" width="50" ></td>
+				<td>Dabur Honey 250gm</td>
+				<td><input type="number" name="entry.525168525" min="0" max="1000" placeholder ="0"> pcs </td>
+				<td></td>
+			</tr>
+				<tr>
+				<td><img src="dhoney.jpg" height="30px" width="50" ></td>
+				<td>Dabur Honey 500gm</td>
+				<td><input type="number" name="entry.650700930"min="0" max="1000" placeholder ="0"> pcs </td>
+				<td></td>
+			</tr>
+				<tr>
+				<td><img src="dhoney.jpg" height="30px" width="50" ></td>
+				<td>Dabur Honey 1 kg</td>
+				<td><input type="number" name="entry.1303313328" min="0" max="1000" placeholder ="0"> pcs </td>
+				<td></td>
+			</tr>
+				<tr>
+				<td><img src="phoney.jpg" height="30px" width="50" ></td>
+				<td>Patanjali Honey 250gm</td>
+				<td><input type="number" name="entry.1644403487" min="0" max="1000" placeholder ="0"> pcs </td>
+				<td></td>
+			</tr>
+				<tr>
+				<td><img src="phoney.jpg" height="30px" width="50" ></td>
+				<td>Patanjali Honey 500gm</td>
+				<td><input type="number" name="entry.1147449060" min="0" max="1000" placeholder ="0"> pcs </td>
+				<td></td>
+			</tr>
+				<tr>
+				<td><img src="phoney.jpg" height="30px" width="50" ></td>
+				<td>Patanjali Honey 1 Kg</td>
+				<td><input type="number" name="entry.1665724297" min="0" max="1000" placeholder ="0"> pcs </td>
+				<td></td>
+			</tr>
+				<tr>
+				<td><img src="bhoney.jpg" height="30px" width="50" ></td>
+				<td>Baidynath Honey 250gm</td>
+				<td><input type="number" name="entry.1238344501" min="0" max="1000" placeholder ="0"> pcs </td>
+				<td></td>
+			</tr>
+				<tr>
+				<td><img src="bhoney.jpg" height="30px" width="50" ></td>
+				<td>Baidynath Honey 500gm</td>
+				<td><input type="number" name="entry.146204138" min="0" max="1000" placeholder ="0"> pcs </td>
+				<td></td>
+			</tr>
+				<tr>
+				<td><img src="bhoney.jpg" height="30px" width="50" ></td>
+				<td>Baidynath Honey 1 Kg</td>
+				<td><input type="number" name="entry.1169494937" min="0" max="1000" placeholder ="0"> pcs </td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="honey.jpg" height="30px" width="50" ></td>
+				<td>Honey</td>
+				<td><input type="number" name="entry.632979132" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"name="entry.632979132"  size="14"placeholder="Brand Name If Any"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="smix.jpg" height="30px" width="50" ></td>
+				<td>Instant Soup Mix</td>
+				<td><input type="number" name="entry.421505438" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.421505438"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="pickle.jpg" height="30px" width="50" ></td>
+				<td>Pickle</td>
+				<td><input type="number" name="entry.380458944" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.380458944" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="pap.jpg" height="30px" width="50" ></td>
+				<td>Papad</td>
+				<td><input type="number" name="entry.969781312" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.969781312"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="dmix.jpg" height="30px" width="50" ></td>
+				<td>Dhokla Ready Mix</td>
+				<td><input type="number" name="entry.470881167" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.470881167"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="imix.jpg" height="30px" width="50" ></td>
+				<td>Idli Ready Mix</td>
+				<td><input type="number" name="entry.1479211233" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1479211233"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="domix.jpg" height="30px" width="50" ></td>
+				<td>Dosa Ready Mix</td>
+				<td><input type="number" name="entry.220249067" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.220249067"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="gmix.jpg" height="30px" width="50" ></td>
+				<td>Gulab Jamun Ready Mix</td>
+				<td><input type="number" name="entry.812938360," min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.812938360,"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="popcorn.jpg" height="30px" width="50" ></td>
+				<td>Popcorn Mix</td>
+				<td><input type="number" name="entry.1029882201" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1029882201"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+		</tbody>
+		</table>
+	
+		<table class="table">
+		<thead class="table">
+			<th style="font-size:20px">Other Essentials</th>
+			</thead>
+		</table>
+		<table class="table table-striped w-auto">
+		<thead class="table-dark">
+			
+			<th>Image</th>
+			<th>Product</th>
+			<th>Quantity<span style="color:#212529">....</span> </th>
+			<th>Mention Brand Name If Any </th>
+		</thead>
+		<tbody class="table-warning">
+			<tr>
+				<td ><img src="candle.jpg" height="30px" width="50" > </td>
+				<td>Candles</td>
+				<td><input type="number" name="entry.1714574445" min="0" max="10" placeholder ="0">  pcs</td>
+				<td><input type="text" name="entry.1714574445"  size="14"  placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="mb.jpg" height="30px" width="50" > </td>
+				<td>Matchbox</td>
+				<td><input type="number" name="entry.2055846125" min="0" max="10" placeholder ="0">  pcs</td>
+				<td><input type="text" name="entry.2055846125"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="agar.jpg" height="30px" width="50" ></td>
+				<td> Agarbati</td>
+				<td><input type="number" name="entry.254984440" min="0" max="10" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.254984440" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="dhop.jpg" height="30px" width="50" ></td>
+				<td> Dhoop</td>
+				<td><input type="number" name="entry.1893759404" min="0" max="10" placeholder ="0">  pcs</td>
+				<td><input type="text" name="entry.1893759404"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="camp.jpg" height="30px" width="50" > </td>
+				<td>Camphor</td>
+				<td><input type="number" name="entry.261530302"  min="0" max="10" placeholder ="0">  pcs</td>
+				<td><input type="text"  name="entry.261530302"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+		
+			<tr>
+				<td><img src="cot.jpg" height="30px" width="50" > </td>
+				<td>Cotton</td>
+				<td><input type="number" name="entry.267500428" min="0" max="10" placeholder ="0">  pcs</td>
+				<td><input type="text"  name="entry.267500428"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			
+			<tr>
+				<td><img src="rangoli.jpg" height="30px" width="50" > </td>
+				<td>Rangoli(White)</td>
+				<td><input type="number" name="entry.915695956" min="0" max="10" placeholder ="0">  pcs</td>
+				<td><input type="text" name="entry.915695956"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="rac.jpg" height="30px" width="50" > </td>
+				<td>Rangoli Colours</td>
+				<td><input type="number" name="entry.2133136854" min="0" max="10" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.2133136854"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="meh.jpg" height="30px" width="50" > </td>
+				<td>Mehndi Cones</td>
+				<td><input type="number" name="entry.386242668"  min="0" max="10" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.386242668"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="mehp.jpg" height="30px" width="50" > </td>
+				<td>Mehndi Powder</td>
+				<td><input type="number" name="entry.714667031" min="0" max="10" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.714667031"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			
+			
+			
+			
+		</tbody>
+	</table>
+	
+	<table class="table">
+		<thead class="table">
+			<th style="font-size:20px">Beauty & Hygiene </th>
+			</thead>
+		</table>
+	<table class="table table-striped w-auto">
+		<thead class="table-dark">
+			
+			<th>Image</th>
+			<th>Product</th>
+			<th>Quantity<span style="color:#212529">........</span> </th>
+			<th>Mention Brand Name If Any </th>
+		</thead>
+		<tbody class="table-info">
+			<tr>
+				<td><img src="tbrush.jpg" height="30px" width="50" > </td>
+				<td >Toothbrush</td>
+				<td><input type="number" name="entry.635694508"min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.635694508" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="tpaste.jpg" height="30px" width="50" > </td>
+				<td>Toothpaste</td>
+				<td><input type="number" name="entry.1438172324" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.1438172324"   size="14"placeholder="Brand Name If Any"></td>				
+			</tr>
+			<tr>
+				<td><img src="mwash.jpg" height="30px" width="50" > </td>
+				<td>Mouthwash</td>
+				<td><input type="number" name="entry.573189766" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.573189766" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="hoil.jpg" height="30px" width="50" > </td>
+				<td>Hair Oil</td>
+				<td><input type="number" name="entry.647085928" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.647085928"size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="dye.jpg" height="30px" width="50" > </td>
+				<td>Hair Dye</td>
+				<td><input type="number" name="entry.299235531" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.299235531"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="talc.jpg" height="30px" width="50" > </td>
+				<td>Talcum Powder</td>
+				<td><input type="number" name="entry.1151062312" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1151062312"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			
+			<tr>
+				<td><img src="sha.jpg" height="30px" width="50" > </td>
+				<td>Shampoo & Conditioner</td>
+				<td><input type="number" name="entry.673980866" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.673980866"   size="14"placeholder="Dove,Loreal,Sunsilk,Pantene"></td>
+			</tr>
+			
+			<tr>
+				<td><img src="per.jpg" height="30px" width="50" > </td>
+				<td>Perfumes & Deos</td>
+				<td><input type="number" name="entry.1969087359" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.1969087359"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			
+			
+			<tr>
+				<td><img src="hand.jpg" height="30px" width="50" > </td>
+				<td>Handwash</td>
+				<td><input type="number" name="entry.1480622255" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1480622255"   size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="sani.jpg" height="30px" width="50" > </td>
+				<td>Sanitizer</td>
+				<td><input type="number" name="entry.227203075" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.227203075"  size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="bsoap.jpg" height="30px" width="50" > </td>
+				<td>Bathing Soap</td>
+				<td><input type="number" name="entry.594778516" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text" name="entry.594778516"   size="14"placeholder="Lux,Santoor,Dove,Pears,etc"></td>
+			</tr>
+			<tr>
+				<td><img src="dsoap.jpg" height="30px" width="50" > </td>
+				<td>Dishwash Soap/Vim Bar</td>
+				<td><input type="number" name="entry.359828585" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.359828585"   size="14"placeholder="Vim/Expert/Patanjali"></td>
+			</tr>
+			<tr>
+				<td><img src="rin.jpg" height="30px" width="50" > </td>
+				<td>Detergent Soap</td>
+				<td><input type="number" name="entry.1965436654" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1965436654"   size="14"placeholder="Rin,Tide,Nirma,Surf Excel"></td>
+			</tr>
+			<tr>
+				<td><img src="rp.jpg" height="30px" width="50" > </td>
+				<td>Detergent Powder</td>
+				<td><input type="number" name="entry.810689891" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.810689891"  size="14"placeholder="Rin,Tide,Nirma,Aerial"></td>
+			</tr>
+			<tr>
+				<td><img src="lizol.jpg" height="30px" width="50" > </td>
+				<td>Floor Cleaner</td>
+				<td><input type="number" name="entry.1751890910" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1751890910"  size="14"placeholder="Lizol,Domex,Dettol"></td>
+			</tr>
+			<tr>
+				<td><img src="harpic.jpg" height="30px" width="50" > </td>
+				<td>Toilet Cleaner/Harpic</td>
+				<td><input type="number" name="entry.1438186992" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td><input type="text"  name="entry.1438186992" size="14"placeholder="Brand Name If Any"></td>
+			</tr>
+			<tr>
+				<td><img src="odonil.jpg" height="30px" width="50" > </td>
+				<td>Odonil</td>
+				<td><input type="number" name="entry.886066209" min="0" max="1000" placeholder ="0"> pcs</td>
+					<td></td>
+			</tr>
+			<tr>
+				<td><img src="gair.jpg" height="30px" width="50" > </td>
+				<td>Godrej Air</td>
+				<td><input type="number" name="entry.1205346735" min="0" max="1000" placeholder ="0"> pcs</td>
+					<td></td>
+			</tr>
+				<tr>
+				<td><img src="gcoil.jpg" height="30px" width="50" > </td>
+				<td>Good Night Coil</td>
+				<td><input type="number" name="entry.597038666" min="0" max="1000" placeholder ="0"> pcs</td>
+					<td></td>
+			</tr>
+				<tr>
+				<td><img src="gcard.jpg" height="30px" width="50" > </td>
+				<td>Good Night Fast Card</td>
+				<td><input type="number" name="entry.931918320" min="0" max="1000" placeholder ="0"> pcs</td>
+					<td></td>
+			</tr>
+			<tr>
+				<td><img src="gliq.jpg" height="30px" width="50" > </td>
+				<td>Good Night Liquid </td>
+				<td><input type="number" name="entry.536449842" min="0" max="1000" placeholder ="0"> pcs</td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		
+		<table class="table">
+		<thead class="table">
+			<th style="font-size:20px">MY LIST </th>
+			
+		</thead>
+		<tbody>
+			
+			<tr><td><textarea  name="entry.1191666668" cols="50%" rows="5" placeholder="Can Add your Extra Products Here..."></textarea></td>
+			</tr>
+		</tbody>
+		</table>
+		
+   
+   </div>
+ </div>
+  
+  
+
+
+
+    
+	
+	 
+		
+		
+		
+		
+		
+		
+
+<div class="container">
+  <h2>Customer Details</h2>
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.1689432042">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="entry.154907429">
+      </div>
+      <div class="w3-section">
+        <label>Phone</label>
+        <input class="w3-input w3-border" type="text" placeholder="Phone" id="phone" required name="entry.639595202">
+      </div>
+      <div class="w3-section">
+        <label>Address</label>
+        <input class="w3-input w3-border" type="text" placeholder="Address" id="Addrss" required name="entry.546132005">
+      </div>
+      <div class="w3-section">
+        <button class="w3-button w3-block w3-black w3-margin-bottom" type="submit">PLACE ORDER</button>
+      </div>
+    </div>
+  
+ </form> 
+</div>
+ 
+ 
+	<script type="text/javascript">
+		function validateName() {
+            var name = document.getElementById('name').value;
+            if(name.length == 0) {
+              alert("Name can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct name") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+
+          function validatePhone() {
+            var phone = document.getElementById('phone').value;
+            if(phone.length == 0) {
+              alert("Phone number can't be blank") ;//Validation Message
+              return false;
+            }
+
+            if(!phone.match(/^[0]?[789]\d{9}$/)) {
+             alert("Please enter a correct phone number") ;//Validation Message
+             return false;
+           }
+
+           return true;
+
+         }
+
+         function validateEmail () {
+
+          var email = document.getElementById('email').value;
+          if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+
+
+        function validateForm() {
+          if (!validateName() || !validatePhone() || !validateEmail()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+		  
+            submitted=true;
+			alert("Order Placed Successfully!!! Thank You ");
+            return true;
+			
+          }
+        }
+        </script>
+
+<!-- End Contact Section -->
+           
+</body>
+</html>
